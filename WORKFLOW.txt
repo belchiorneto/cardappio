@@ -1,4 +1,4 @@
-BankSys Git/GitHub Workflow
+Cardappio Git/GitHub Workflow
 
 Step 1) Starting
 $ git checkout master
