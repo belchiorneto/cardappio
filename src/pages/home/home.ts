@@ -102,10 +102,11 @@ carregaEstabelecimentos(){
       No momento a url online só funciona no celular, na versão web, usar os dados offline (proximos do pici)
       na versão final, será usado webservice proprio (provavelmente firebase), então estas requisições provavelmente
       serão enviadas para uma classe separada
+      =====================================================
       */
       //let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + this.latUsuario +","+this.lngUsuario + "&radius="+ raio +"&type=restaurant&key=AIzaSyDLLDf1LsT8QVU1YHTER1fc7RCAarqVmVI";
       // local
-      let url = "../resources/dadosoffline.json";
+      let url = "assets/dadosoffline.json";
       
       this.http.get(url).map(res => res.json()).subscribe(data => {
         
