@@ -1,26 +1,27 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
++-------------------------------------------------------------------------------+
+|   Projeto de aplivativo para a disciplina "Engenharia de Software"            |
+|   Instituição:        UFC - Universidade Federal do Ceará                     |
+|   Equipe:             FTD - Faz Tudo Developers                               |
+|   Professora:         Rossana Andrade                                         |
+|   Monitora:           Amanda                                                  |
+|   Membros da Equipe:  Victor, Belchior, Helio, Felipe, Leyberson, Paulo       |
++-------------------------------------------------------------------------------+
 
-## How to use this template
+Galera da FTD, aqui os passos pra clonar este branch, usei windows 7 64 bits, mas acho que no linux é mais simples
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
+ionic versão 3.2.0
+cordova versão 7.0.1
+node js versão 6.10.2
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
+1 - git clone -b versao2 https://github.com/belchiorneto/cardappio.git
+2 - cd cardappio
+3 - npm install (pra instalar as dependencias, vá tomar café ...)
 
-### With the Ionic CLI:
+a partir daqui já deve estar executável no browser com:
+ionic serve
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Para compilar a versão android, é necessário:
+Cordova platform add android
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+depois pra rodar:
+cordova run android (no caso de testar em um dispositivi físico)

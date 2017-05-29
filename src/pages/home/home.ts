@@ -115,6 +115,7 @@ carregaEstabelecimentos(){
             let newlng = data.results[key].geometry.location.lng;
             let dist = this.calcdist(this.latUsuario, this.lngUsuario, newlat, newlng);
             this.addMarker(newlat, newlng, data.results[key].name, dist);
+            console.log("Carregados dados " + key);
         }
         
     });
