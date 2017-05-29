@@ -105,7 +105,7 @@ carregaEstabelecimentos(){
       */
       //let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + this.latUsuario +","+this.lngUsuario + "&radius="+ raio +"&type=restaurant&key=AIzaSyDLLDf1LsT8QVU1YHTER1fc7RCAarqVmVI";
       // local
-      let url = "assets/dadosoffline.json";
+      let url = "../resources/dadosoffline.json";
       
       this.http.get(url).map(res => res.json()).subscribe(data => {
         
